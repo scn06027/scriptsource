@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = new Array();
+      arr.push(12);
+      arr.push(1);
+      arr.push(2);
+      arr.push(64);
+      arr.push(7);
+      arr.push(23);
+      arr.push(76);
+      arr.push(13);
+      document.write(arr + "<br>");
+      document.write(arr.join("-") + "<br>");
+      document.write(arr.concat([2, 4, 6, 8, 20]) + "<br>");
+      document.write(arr.slice(1, 4) + "<br>");
+      document.write(arr.sort() + "<br>"); //배열 안 숫자는 string개념으로 다루기 때문에 sort()가 안된다
+      document.write(["사당", "강남", "한남", "옥수"].sort() + "<br>");
+      document.write(["사당", "강남", "한남", "옥수"].reverse() + "<br>");
+      const fruit = ["Banana", "Orange", "Apple", "Mango"];
+      fruit.sort();
+      document.write(fruit + "<br>");
+      fruit.reverse();
+      document.write(fruit + "<br>");
+    </script>
+  </body>
+</html>

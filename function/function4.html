@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //익명함수는 호이스팅이 안됨! 먼저 선언한다음에 호출해야됨
+      let sum = 0;
+      const output = function () {
+        for (var i = 1; i < 11; i++) {
+          sum += i;
+        }
+        document.write(sum);
+      };
+      //함수의 실행결과를 변수에다 담아주고 그 변수를 출력한다.
+      output();
+      document.write("<br>");
+      const result = function add(a, b) {
+        return a + b;
+      };
+
+      //대외적으로는 result로 불러줘야됨
+      document.write(result(2, 5));
+    </script>
+  </body>
+</html>
